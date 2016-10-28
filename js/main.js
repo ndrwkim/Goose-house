@@ -3,7 +3,7 @@ $(document).ready(function(e) {
 });
 
 var $modalOverlay = $('#modalOverlay'); // Cache your selectors
-var $modal        = $('#modal');
+var $modal        = $('.modal');
 var $modalClose   = $('.modalClose');
 var $modalOpen    = $('.modalOpen');
 

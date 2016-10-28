@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+h1, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 img[usemap] {
   border: none;
   height: auto;
@@ -42,24 +47,24 @@ img[usemap] {
   /*height: 50px;*/
 }
 
-#socialmedia {
+#nav-social {
   float: left;
   width: 30%;
   padding: 1em 0 0 1em;
   margin: 0;
 }
 
-#socialmedia li {
+#nav-social li {
   display: inline-block;
   padding-right: 0.5em;
   font-size: 2em;
 }
 
-#socialmedia li:last-child {
+#nav-social li:last-child {
   padding-right: 0;
 }
 
-#logo {
+#nav-logo {
   display: inline-block;
   text-align: center;
   margin: 0 auto;
@@ -67,11 +72,11 @@ img[usemap] {
   width: 40%;
 }
 
-#logo img {
+#nav-logo img {
   max-width: 35%;
 }
 
-#store {
+#nav-store {
   float: right;
   display: inline-block;
   margin: 0;
@@ -95,20 +100,117 @@ img[usemap] {
   background: rgba(0,0,0,0.3);
 }
 
-#modal {
+.modal {
   display: none;
   position: relative;
-  margin: 100px auto;
-  background: #d3d3d3;
-  width: 300px;
+  top: 20%;
+  margin: 0 auto;
+  width: 60%;
+  height: 60%;
   padding: 30px;
-  /*box-shadow: 0 5px 50px -4px #aaa;*/
+  box-shadow: 0 5px 50px -4px #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#modal span.modalClose {
+.modal .content {
+  font: 600 1em 'Varela', sans-serif;
+  background-color: white;
+  opacity: 0.8;
+  z-index: 0;
+  color: black;
+  text-align: left;
+  width: 40%;
+  margin-top: 10%;
+  padding: 1em;
+}
+
+.content h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.content p {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.modal span.modalClose {
   cursor: pointer;
   font-size: 20px;
   position: absolute;
   right: 20px;
   top: 15px;
+}
+
+.personal-media li {
+  display: inline-block;
+  font-size: 1.5em;
+  padding-right: 0.25em;
+}
+
+.watanabe {
+  background-image: url(../img/watanabe.jpg);
+}
+
+.watanabe .content {
+  float: right;
+}
+
+.takezawa {
+  background-image: url(../img/takezawa.jpg);
+}
+
+.takezawa .content {
+  float: right;
+}
+
+.manami {
+  background-image: url(../img/manami.jpg);
+}
+
+.manami .content {
+  float: left;
+}
+
+.kudo {
+  background-image: url(../img/kudo.jpg);
+}
+
+.kudo .content {
+  float: right;
+}
+
+.takebuchi {
+  background-image: url(../img/takebuchi.jpg);
+}
+
+.takebuchi .content {
+  float: left;
+}
+
+.sayaka {
+  background-image: url(../img/sayaka.jpg);
+}
+
+.sayaka .content {
+  float: right;
+}
+
+.johnny {
+  background-image: url(../img/johnny.jpg);
+}
+
+.johnny .content {
+  float: left;
+}
+
+footer p {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font: 400 1.5em 'Varela', sans-serif;
+  padding-bottom: 0.5em;
 }
