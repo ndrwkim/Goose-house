@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Varela');
+
 html {
   box-sizing: border-box;
 }
@@ -43,20 +45,25 @@ img[usemap] {
 #socialmedia {
   float: left;
   width: 30%;
-  padding: 1em;
+  padding: 1em 0 0 1em;
   margin: 0;
 }
 
 #socialmedia li {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+#socialmedia li:last-child {
+  padding-right: 0;
 }
 
 #logo {
   display: inline-block;
   text-align: center;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 0 0 0;
   width: 40%;
 }
 
@@ -68,10 +75,8 @@ img[usemap] {
   float: right;
   display: inline-block;
   margin: 0;
-  padding: 1em;
-  font-size: 1.5em;
-  font-family: Helvetica;
-  letter-spacing: 1px;
+  padding: 1rem 1rem 0 0;
+  font: 600 2em 'Varela', sans-serif;
 }
 
 .imgmap-centered {
